@@ -7,3 +7,49 @@ body{
 .carousel-inner > .item {
     height: 400px;
  }
+
+section {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+form {
+    border: 1px solid black;
+    border-radius: 2%;
+    margin: auto;
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    background-image: url(../img/campnou.jpg);
+ }
+
+ form h4 {
+     color: white;
+ }
+
+ form .input {
+     width: 100%;
+     margin-bottom: 30px;
+     box-sizing: border-box;
+     height: 35px;
+     border: 1px solid black;
+     outline: none;
+     font-size: 20px;
+ }
+
+form textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    font-size: 15px;
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+ .submit {
+     width: 100px;
+     height: 40px;
+     background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(129,252,70,1) 100%);
+ }
