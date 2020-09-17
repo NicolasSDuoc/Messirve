@@ -57,3 +57,12 @@ form textarea {
  label{
      color: red;
  }
+
+ figcaption.figure-caption{
+     color: white;
+     text-align: center;
+ }
+ .imgcarousel{
+     width: 600px;
+     height: 800px;
+ }
