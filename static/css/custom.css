@@ -76,3 +76,38 @@ form textarea {
  .bio p {
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  }
+
+@media only screen and (max-width: 600px) {
+
+    .portada img {
+        width: 50%;
+        height: 20%;
+        
+      }
+
+    .bio p img {
+      width: 50%;
+      
+    }
+
+    .bio {
+        padding-bottom: 15%;
+    }
+
+    footer {
+        height: 15%;
+    }
+
+    footer div {
+        flex-wrap: wrap;
+    }
+
+    .form form {
+        width: 80%;
+        background-repeat: no-repeat;
+    }
+
+    .form {
+        padding-bottom: 150px;
+    }
+  }
