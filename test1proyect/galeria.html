@@ -1,0 +1,36 @@
+{% extends "template.html" %}
+{% load static %}
+{% block title %}Messirve Galeria{% endblock %}
+{% block content %}
+
+<div class="container-fluid" style="padding-top: 10px; padding-bottom: 100px;">
+    <div class="row">
+        <div class="col-md-3">
+            <img src="{% static 'img/b2009.jpg' %}" id="img1" class="rounded img-thumbnail mx-auto img-fluid">
+            <figcaption class="figure-caption"> Balon de oro 2009 </figcaption>
+        </div>
+        <div class="col-md-3">
+            <img src="{% static 'img/b2010.jpg' %}" id="img2" class="rounded img-thumbnail mx-auto img-fluid" >
+            <figcaption class="figure-caption"> Balon de oro 2010 </figcaption>
+        </div>
+        <div class="col-md-3">
+            <img src="{% static 'img/b2011.jpg' %}" id="img3" class="rounded img-thumbnail mx-auto img-fluid" >
+            <figcaption class="figure-caption"> Balon de oro 2011 </figcaption>
+        </div>
+        <div class="col-md-3">
+            <img src="{% static 'img/b2012.jpg' %}" id="img3" class="rounded img-thumbnail mx-auto img-fluid" >
+            <figcaption class="figure-caption"> Balon de oro 2012 </figcaption>
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'img/b2015.jpg' %}" id="img3" class="rounded img-thumbnail mx-auto img-fluid" >
+            <figcaption class="figure-caption"> Balon de oro 2015 </figcaption>
+        </div>
+        <div class="col-md-4">
+            <img src="{% static 'img/b2019.jpg' %}" id="img3" class="rounded img-thumbnail mx-auto img-fluid" >
+            <figcaption class="figure-caption"> Balon de oro 2019 </figcaption>
+        </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
