@@ -1,0 +1,32 @@
+{% extends "template.html" %} 
+{% load static %}
+{% block title %}Messirve{% endblock %}
+{% block content %}
+
+    <section class="form">
+        <form id="contacto" action="/save_contact_info" enctype="multipart/form-data" name="contact" method="POST">
+            {% csrf_token %}
+            <h4 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+            Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+            'Helvetica Neue', sans-serif;">Te diré como ser el mejor del mundo</h4>
+            <hr style="padding-bottom: 10px;">
+            <div class="form-group">
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombres" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellidos">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="telef" name="telef" placeholder="Telefono">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" id="mail" name="mail" placeholder="E-mail" required>
+            </div>
+            <div class="form-group">
+                <input type="file" id="" name="imagen">
+            </div>
+            <textarea name="comentario" id="comentario" placeholder="Escribe aqui tu comentario..."></textarea>
+            <input class="btn btn-primary" type="submit" id="formulario" name="btn_enviar" >
+        </form>
+    </section>
+    {% endblock %}

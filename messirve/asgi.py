@@ -1,5 +1,5 @@
 """
-ASGI config for test1proyect project.
+ASGI config for messirve project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'test1proyect.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'messirve.settings')
 
 application = get_asgi_application()

@@ -1,9 +1,9 @@
-{% extends "template.html" %}
+{% extends "template.html" %} 
 {% load static %}
-{% block title %}Messirve Home{% endblock %}
+{% block title %}Messirve{% endblock %}
 {% block content %}
 
-<div class="container-fluid">
+<div class="container-fluid portada">
     <div class="row">
         <div class="col-sm">
     <div id="CarrouselMessi" class="carousel slide" data-ride="carousel">
@@ -33,7 +33,6 @@
     </div>
     </div>
 </div>
-
 <section class="bio">
     <h3>Lionel messi</h3>
     <p><img src="{% static 'img/biografia.jpg' %}" style="float: right; margin: 10px;">Conocido como Leo o Pulga, su inmensa calidad ya apuntaba cuando tenía cinco años y jugaba en el club de barrio de su ciudad natal dirigido por su padre, un empleado de la industria metalúrgica, y se reafirmó cuando, a partir de sus siete años, comenzó a jugar en las divisiones inferiores del Newell's Old Boys de Rosario.
@@ -55,6 +54,8 @@
         El gol frente al Getafe fue de inmediato comparado con el "Gol del siglo" de Maradona
         
         La era Guardiola
+
+	  <img src="{% static 'img/biografia2.jpg' %}" style="float: right; margin: 10px; width: 260px;">
         
         El FC Barcelona inició la temporada 2008-2009 con un nuevo proyecto que generó un cierto escepticismo entre los culés. El presidente Laporta había confiado el banquillo a un hombre de la casa, Josep Guardiola, con buenos resultados en el filial pero sin experiencia en primera. Los más optimistas auguraban buenos resultados a largo plazo. Pero la historia fue otra. Los chicos de Guardiola, con Messi convertido en crack indiscutible, pergeñaron la campaña futbolística más apasionante en décadas. Con un fútbol de libro, alabado en Europa y en el mundo, encadenaron victorias y resultados que pulverizaron todos los récords y consiguieron lo que parecía imposible: ganar en una misma temporada la Copa del Rey, la Liga y la Liga de Campeones, un triplete histórico que nunca antes había logrado ningún equipo español.
         
@@ -86,4 +87,5 @@
         Sumando a ello la plena recuperación de Leo Messi y su perfecto entendimiento con las nuevas incorporaciones en la delantera (el extremo brasileño Neymar, joven promesa y probable sucesor de Messi, y el uruguayo Luis Suárez como killer o rematador), el Barcelona reeditó en la temporada 2014-2015 los éxitos de 2009 adjudicándose por segunda el vez el triplete (la Liga española, la Copa del Rey y la Liga de Campeones), y a punto estuvo de igualar los seis títulos en año natural al proclamarse campeón de la Supercopa de Europa y del Mundial de Clubes al inicio de la temporada 2015-2016. El comienzo de esta nueva etapa no augura sino nuevos y arrolladores triunfos a la maquinaria azulgrana y a su principal estrella, convertido ya a sus 28 años en «leyenda en activo» del deporte más popular del planeta.</p>
 </section>
 
+<hr>
 {% endblock %}
