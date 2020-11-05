@@ -9,10 +9,7 @@ from django.db import IntegrityError
 from django.db.models import F
 
 def home(request):
-    return render(request,'template.html')
-
-def index(request):
-    return render(request, 'index.html')
+    return render(request,'home.html')
 
 def galeria(request):
     return render(request, 'galeria.html')
@@ -27,7 +24,8 @@ def save_contact_info(request):
     print("Correo: {0}".format(request.POST["mail"]))
     print("Telefono: {0}".format(request.POST["telef"]))
     print("Comentario: {0}".format(request.POST["comentario"]))
-    print("imagen: {0}".format(request.POST["imagen"]))
+    print("imagen: {0}".format(request.FILES["imagen"]))
+
 
     contacto=Contacto(
         nombres=request.POST["nombre"],
@@ -39,7 +37,9 @@ def save_contact_info(request):
     )
 
     contacto.save()
-        
+
+
+
     return render(request,"contacto.html")
     
 

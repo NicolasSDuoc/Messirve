@@ -76,17 +76,15 @@ WSGI_APPLICATION = 'messirve.wsgi.application'
 
 DATABASES = {
      'default': {
-        'ENGINE': 'django.db.backends.oracle',
-        'NAME': 'localhost:1521/XE',
-        'USER': 'django',
-        'PASSWORD': 'django',
-        'TEST': {
-            'USER': 'default_test',
-            'TBLSPACE': 'default_test_tbls',
-            'TBLSPACE_TMP': 'default_test_tbls_tmp',
-        },
-    },
-}
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'messirve',
+        'USER': 'root',
+        'PASSWORD': 'rootniggas',
+        'HOST': 'messirve.crrdbuoi4gnh.us-east-2.rds.amazonaws.com',
+        'PORT': '3308'
+        }
+    }
+
 
 
 # Password validation
